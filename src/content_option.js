@@ -21,48 +21,25 @@ const introdata = {
 };
 
 const dataabout = {
-  title: "abit about my self",
+  title: "a little bit about my self",
   aboutme:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
+    "A fullstack developer with skills in developing clean solutions. Some of my favorite tools are Python, React.js, Node.js, Google Cloud Platform, Shopify and Twilio.",
 };
 const worktimeline = [
   {
-    jobtitle: "Designer of week",
-    where: "YAdfi",
-    date: "2020",
+    jobtitle: "Software Developer",
+    where: "Insiderstore",
+    date: "2021-now",
   },
   {
-    jobtitle: "Designer of week",
-    where: "Jamalya",
-    date: "2019",
+    jobtitle: "Software Developer",
+    where: "Greystone",
+    date: "2020-2021",
   },
   {
-    jobtitle: "Designer of week",
-    where: "ALquds",
-    date: "2019",
-  },
-];
-
-const skills = [
-  {
-    name: "Python",
-    value: 90,
-  },
-  {
-    name: "Djano",
-    value: 85,
-  },
-  {
-    name: "Javascript",
-    value: 80,
-  },
-  {
-    name: "React",
-    value: 60,
-  },
-  {
-    name: "Jquery",
-    value: 85,
+    jobtitle: "Project Analyst",
+    where: "Greystone",
+    date: "2018-2020",
   },
 ];
 
@@ -187,7 +164,6 @@ export {
   dataabout,
   dataportfolio,
   worktimeline,
-  skills,
   services,
   introdata,
   contactConfig,

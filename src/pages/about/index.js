@@ -2,13 +2,8 @@ import React from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
-import {
-  dataabout,
-  meta,
-  worktimeline,
-  skills,
-  services,
-} from "../../content_option";
+import { dataabout, meta, worktimeline, services } from "../../content_option";
+import { skills } from "../../skills";
 
 export const About = () => {
   return (
@@ -37,7 +32,7 @@ export const About = () => {
         </Row>
         <Row className=" sec_sp">
           <Col lg="5">
-            <h3 className="color_sec py-4">Work Timline</h3>
+            <h3 className="color_sec py-4">Work Timeline</h3>
           </Col>
           <Col lg="7">
             <table className="table caption-top">
@@ -60,20 +55,39 @@ export const About = () => {
             <h3 className="color_sec py-4">Skills</h3>
           </Col>
           <Col lg="7">
-            {skills.map((data, i) => {
+            {skills.map((mainSkill, i) => {
+              const Icon = mainSkill.icon;
+              const subSkillsChunks = [];
+              for (let i = 0; i < mainSkill.subs.length; i += 4) {
+                subSkillsChunks.push(mainSkill.subs.slice(i, i + 4));
+              }
               return (
-                <div key={i}>
-                  <h3 className="progress-title">{data.name}</h3>
-                  <div className="progress">
-                    <div
-                      className="progress-bar"
-                      style={{
-                        width: `${data.value}%`,
-                      }}
-                    >
-                      <div className="progress-value">{data.value}%</div>
-                    </div>
+                <div key={i} className="skill-block">
+                  <div className="main-skill">
+                    <Icon size={50} className="skill-icon" />
+                    <p className="skill-name">{mainSkill.name}</p>
                   </div>
+                  {subSkillsChunks.map((chunk, index) => (
+                    <div key={index} className="sub-skills">
+                      {chunk.map((subSkill, j) => {
+                        const SubIcon = subSkill.icon;
+                        return (
+                          <div key={j} className="sub-skill-item">
+                            <SubIcon className="skill-icon" />
+                            <p className="skill-name">{subSkill.name}</p>
+                          </div>
+                        );
+                      })}
+                      {Array(4 - chunk.length)
+                        .fill(null)
+                        .map((_, k) => (
+                          <div
+                            key={`empty-${k}`}
+                            className="sub-skill-item empty-skill"
+                          ></div>
+                        ))}
+                    </div>
+                  ))}
                 </div>
               );
             })}
@@ -81,7 +95,7 @@ export const About = () => {
         </Row>
         <Row className="sec_sp">
           <Col lang="5">
-            <h3 className="color_sec py-4">services</h3>
+            <h3 className="color_sec py-4">Services</h3>
           </Col>
           <Col lg="7">
             {services.map((data, i) => {
