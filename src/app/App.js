@@ -1,13 +1,10 @@
 import React, { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import {
-  BrowserRouter as Router,
-  useLocation,
-} from "react-router-dom";
+import { BrowserRouter as Router, useLocation } from "react-router-dom";
 import withRouter from "../hooks/withRouter";
 import AppRoutes from "./routes";
 import Headermain from "../header";
-import AnimatedCursor  from "../hooks/AnimatedCursor";
+import AnimatedCursor from "../hooks/AnimatedCursor";
 import "./App.css";
 
 function _ScrollToTop(props) {
@@ -29,7 +26,7 @@ export default function App() {
           color="255, 255 ,255"
           outerAlpha={0.4}
           innerScale={0.7}
-          outerScale={5}
+          outerScale={1.5}
         />
       </div>
       <ScrollToTop>

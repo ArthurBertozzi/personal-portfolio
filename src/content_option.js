@@ -1,10 +1,11 @@
 import homeBanner from "./assets/images/home-banner.jpg";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const logotext = "Arthur";
 const meta = {
-  title: "John Doe",
+  title: "Arthur Bertozzi",
   description:
-    "I’m John Doe data scientist _ Full stack devloper,currently working in Berlin",
+    "I’m Arthur Bertozzi a software engineer based in Campinas/Brazil",
 };
 
 const introdata = {
@@ -15,7 +16,7 @@ const introdata = {
     third: "I help you to solve your problems",
   },
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
+    "I'm a software engineer / fullstack developer based in Campinas/Brazil",
   your_img_url: homeBanner,
 };
 
@@ -171,12 +172,16 @@ const contactConfig = {
   YOUR_USER_ID: "user_id",
 };
 
-const socialprofils = {
-  github: "https://github.com",
-  facebook: "https://facebook.com",
-  linkedin: "https://linkedin.com",
-  twitter: "https://twitter.com",
-};
+const socialprofiles = [
+  {
+    linkedin: {
+      url: "https://www.linkedin.com/in/arthur-bertozzi/",
+      icon: FaLinkedin,
+    },
+    github: { url: "https://github.com/ArthurBertozzi", icon: FaGithub },
+  },
+];
+
 export {
   meta,
   dataabout,
@@ -186,6 +191,6 @@ export {
   services,
   introdata,
   contactConfig,
-  socialprofils,
+  socialprofiles,
   logotext,
 };
