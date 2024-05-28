@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Popover, OverlayTrigger } from "react-bootstrap";
 import { dataabout, meta, worktimeline, services } from "../../content_option";
 import { skills } from "../../skills";
 
@@ -57,37 +57,35 @@ export const About = () => {
           <Col lg="7">
             {skills.map((mainSkill, i) => {
               const Icon = mainSkill.icon;
-              const subSkillsChunks = [];
-              for (let i = 0; i < mainSkill.subs.length; i += 4) {
-                subSkillsChunks.push(mainSkill.subs.slice(i, i + 4));
-              }
+
+              const popover = (
+                <Popover id={`popover-${i}`}>
+                  <Popover.Body className="popover-body">
+                    {mainSkill.subs.map((subSkill, j) => {
+                      const SubIcon = subSkill.icon;
+                      return (
+                        <div key={j} className="sub-skill-item">
+                          <SubIcon className="skill-icon" />
+                          <p className="skill-name">{subSkill.name}</p>
+                        </div>
+                      );
+                    })}
+                  </Popover.Body>
+                </Popover>
+              );
+
               return (
                 <div key={i} className="skill-block">
-                  <div className="main-skill">
-                    <Icon size={50} className="skill-icon" />
-                    <p className="skill-name">{mainSkill.name}</p>
-                  </div>
-                  {subSkillsChunks.map((chunk, index) => (
-                    <div key={index} className="sub-skills">
-                      {chunk.map((subSkill, j) => {
-                        const SubIcon = subSkill.icon;
-                        return (
-                          <div key={j} className="sub-skill-item">
-                            <SubIcon className="skill-icon" />
-                            <p className="skill-name">{subSkill.name}</p>
-                          </div>
-                        );
-                      })}
-                      {Array(4 - chunk.length)
-                        .fill(null)
-                        .map((_, k) => (
-                          <div
-                            key={`empty-${k}`}
-                            className="sub-skill-item empty-skill"
-                          ></div>
-                        ))}
+                  <OverlayTrigger
+                    trigger="hover"
+                    placement="bottom"
+                    overlay={popover}
+                  >
+                    <div className="main-skill">
+                      <Icon size={50} className="skill-icon" />
+                      <p className="skill-name">{mainSkill.name}</p>
                     </div>
-                  ))}
+                  </OverlayTrigger>
                 </div>
               );
             })}

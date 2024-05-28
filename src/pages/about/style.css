@@ -1,22 +1,25 @@
-.sec_sp {
-  margin-bottom: calc(3rem + 5.128vw);
-}
+/* Add this to your style.css */
 
-.table td,
-.table th {
+.popover-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: var(--bg-color);
   color: var(--text-color);
-}
-
-.t_border {
-  border-color: var(--text-color) !important;
+  border: 1px solid var(--text-color);
+  width: 200%;
 }
 
 .skill-block {
-  margin-bottom: 3rem; /* Aumentar o espaçamento entre os blocos */
-  padding: 1rem; /* Adicionar padding para o conteúdo dentro do bloco */
-  border: 1px solid var(--text-color); /* Adicionar borda */
-  border-radius: 10px; /* Bordas arredondadas */
-  background-color: var(--secondary); /* Cor de fundo para destacar o bloco */
+  margin-bottom: 3rem; /* Increase spacing between blocks */
+  padding: 1rem; /* Add padding for content inside the block */
+  border: 1px solid var(--text-color); /* Add border */
+  border-radius: 10px; /* Rounded corners */
+  background-color: var(
+    --secondary
+  ); /* Background color to highlight the block */
 }
 
 .main-skill {
@@ -26,25 +29,19 @@
   margin-bottom: 1rem;
 }
 
-.sub-skills {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin-bottom: 1.5rem; /* Espaçamento maior entre as linhas de sub-habilidades */
-}
-
 .sub-skill-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 22%; /* Ajustar para quatro itens por linha */
+  width: 22%; /* Adjust for four items per row */
   margin-bottom: 1rem;
+  margin-right: 1rem;
 }
 
 .skill-icon {
   color: var(--text-color);
-  width: 50px; /* Tamanho máximo da imagem do ícone */
-  height: 50px; /* Tamanho máximo da imagem do ícone */
+  width: 50px; /* Max size of icon image */
+  height: 50px; /* Max size of icon image */
 }
 
 .skill-name {
