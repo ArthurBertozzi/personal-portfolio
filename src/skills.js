@@ -61,7 +61,7 @@ export const skills = [
     ],
   },
   {
-    name: "Google Cloud Platform",
+    name: "GCP",
     icon: SiGooglecloud,
     subs: [
       { name: "Cloud Functions", icon: CloudFunctionIcon },

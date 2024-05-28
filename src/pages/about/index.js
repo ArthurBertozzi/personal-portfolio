@@ -30,6 +30,8 @@ export const About = () => {
             </div>
           </Col>
         </Row>
+        <hr className="t_border my-4 ml-0 text-left" />
+
         <Row className=" sec_sp">
           <Col lg="5">
             <h3 className="color_sec py-4">Work Timeline</h3>
@@ -50,33 +52,39 @@ export const About = () => {
             </table>
           </Col>
         </Row>
+        <hr className="t_border my-4 ml-0 text-left" />
+
         <Row className="sec_sp">
           <Col lg="5">
             <h3 className="color_sec py-4">Skills</h3>
+            <p className="instruction-text">
+              Hover over the icons to see more details
+            </p>
           </Col>
           <Col lg="7">
-            {skills.map((mainSkill, i) => {
-              const Icon = mainSkill.icon;
+            <div className="skills-container">
+              {skills.map((mainSkill, i) => {
+                const Icon = mainSkill.icon;
 
-              const popover = (
-                <Popover id={`popover-${i}`}>
-                  <Popover.Body className="popover-body">
-                    {mainSkill.subs.map((subSkill, j) => {
-                      const SubIcon = subSkill.icon;
-                      return (
-                        <div key={j} className="sub-skill-item">
-                          <SubIcon className="skill-icon" />
-                          <p className="skill-name">{subSkill.name}</p>
-                        </div>
-                      );
-                    })}
-                  </Popover.Body>
-                </Popover>
-              );
+                const popover = (
+                  <Popover id={`popover-${i}`}>
+                    <Popover.Body className="popover-body">
+                      {mainSkill.subs.map((subSkill, j) => {
+                        const SubIcon = subSkill.icon;
+                        return (
+                          <div key={j} className="sub-skill-item">
+                            <SubIcon className="skill-icon" />
+                            <p className="skill-name">{subSkill.name}</p>
+                          </div>
+                        );
+                      })}
+                    </Popover.Body>
+                  </Popover>
+                );
 
-              return (
-                <div key={i} className="skill-block">
+                return (
                   <OverlayTrigger
+                    key={i}
                     trigger="hover"
                     placement="bottom"
                     overlay={popover}
@@ -86,11 +94,13 @@ export const About = () => {
                       <p className="skill-name">{mainSkill.name}</p>
                     </div>
                   </OverlayTrigger>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </Col>
         </Row>
+        <hr className="t_border my-4 ml-0 text-left" />
+
         <Row className="sec_sp">
           <Col lang="5">
             <h3 className="color_sec py-4">Services</h3>
