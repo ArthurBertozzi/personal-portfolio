@@ -45,19 +45,13 @@ const worktimeline = [
 
 const services = [
   {
-    title: "UI & UX Design",
+    title: "Software Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+      "Create software development solutions that are scalable, reliable, and secure.",
   },
   {
-    title: "Mobile Apps",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
-  },
-  {
-    title: "Wordpress Design",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+    title: "Automations - Local & Web",
+    description: "Automate your business processes to save time and money.",
   },
 ];
 
@@ -138,15 +132,15 @@ const dataportfolio = [
 ];
 
 const contactConfig = {
-  YOUR_EMAIL: "name@domain.com",
-  YOUR_FONE: "(555)123-4567",
-  description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
+  YOUR_EMAIL: "arthur_ba@hotmail.com",
+  // decidir se deixar telefone ou nao
+  YOUR_FONE: "+55 11 981087184",
+  description: "Feel free to contact me for any work or suggestions",
   // creat an emailjs.com account
   // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
-  YOUR_SERVICE_ID: "service_id",
-  YOUR_TEMPLATE_ID: "template_id",
-  YOUR_USER_ID: "user_id",
+  YOUR_SERVICE_ID: "service_5lggnyp",
+  YOUR_TEMPLATE_ID: "template_my9hj1q",
+  YOUR_USER_ID: "BKg4LRKC9pY8l7PIl",
 };
 
 const socialprofiles = [

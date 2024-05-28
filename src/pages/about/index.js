@@ -88,6 +88,7 @@ export const About = () => {
                     trigger="hover"
                     placement="bottom"
                     overlay={popover}
+                    flip={true}
                   >
                     <div className="main-skill">
                       <Icon size={50} className="skill-icon" />
@@ -100,7 +101,6 @@ export const About = () => {
           </Col>
         </Row>
         <hr className="t_border my-4 ml-0 text-left" />
-
         <Row className="sec_sp">
           <Col lang="5">
             <h3 className="color_sec py-4">Services</h3>
