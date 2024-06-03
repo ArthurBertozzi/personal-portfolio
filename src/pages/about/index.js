@@ -3,7 +3,7 @@ import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col, Popover, OverlayTrigger } from "react-bootstrap";
 import { dataabout, meta, worktimeline, services } from "../../content_option";
-import { skills } from "../../skills";
+import { skills } from "./skills";
 
 export const About = () => {
   return (

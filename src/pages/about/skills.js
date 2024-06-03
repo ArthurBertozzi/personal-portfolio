@@ -5,6 +5,7 @@ import {
   FaShopify,
   FaTrello,
   FaSlack,
+  FaFileExcel,
 } from "react-icons/fa";
 import {
   SiFlask,
@@ -20,22 +21,23 @@ import {
   SiLooker,
   SiTwilio,
   SiFirebase,
+  SiGooglesheets,
 } from "react-icons/si";
 import { PiFileSqlDuotone } from "react-icons/pi";
 
 import { CiDatabase as DataIcon } from "react-icons/ci";
 
-import { ReactComponent as CloudFunctionIcon } from "./assets/gcp/cloud_functions.svg";
-import { ReactComponent as AppEngineIcon } from "./assets/gcp/app_engine.svg";
-import { ReactComponent as CloudStorageIcon } from "./assets/gcp/cloud_storage.svg";
-import { ReactComponent as ComputeEngineIcon } from "./assets/gcp/compute_engine.svg";
-import { ReactComponent as FirestoreIcon } from "./assets/gcp/firestore.svg";
-import { ReactComponent as CloudTasks } from "./assets/gcp/cloudtasks.svg";
-import { ReactComponent as IamIcon } from "./assets/gcp/identity_and_access_management.svg";
-import { ReactComponent as PubSubIcon } from "./assets/gcp/pubsub.svg";
-import { ReactComponent as TkinterIcon } from "./assets/python/tkinter.svg";
-import { ReactComponent as KivyIcon } from "./assets/python/kivy.svg";
-import { ReactComponent as PlaywrightIcon } from "./assets/js/playwright.svg";
+import { ReactComponent as CloudFunctionIcon } from "../../assets/gcp/cloud_functions.svg";
+import { ReactComponent as AppEngineIcon } from "../../assets/gcp/app_engine.svg";
+import { ReactComponent as CloudStorageIcon } from "../../assets/gcp/cloud_storage.svg";
+import { ReactComponent as ComputeEngineIcon } from "../../assets/gcp/compute_engine.svg";
+import { ReactComponent as FirestoreIcon } from "../../assets/gcp/firestore.svg";
+import { ReactComponent as CloudTasks } from "../../assets/gcp/cloudtasks.svg";
+import { ReactComponent as IamIcon } from "../../assets/gcp/identity_and_access_management.svg";
+import { ReactComponent as PubSubIcon } from "../../assets/gcp/pubsub.svg";
+import { ReactComponent as TkinterIcon } from "../../assets/python/tkinter.svg";
+import { ReactComponent as KivyIcon } from "../../assets/python/kivy.svg";
+import { ReactComponent as PlaywrightIcon } from "../../assets/js/playwright.svg";
 
 export const skills = [
   {
@@ -93,6 +95,8 @@ export const skills = [
       { name: "Firebase", icon: SiFirebase },
       { name: "Trello", icon: FaTrello },
       { name: "Slack", icon: FaSlack },
+      { name: "Excel", icon: FaFileExcel },
+      { name: "Google Sheets", icon: SiGooglesheets },
     ],
   },
 ];
