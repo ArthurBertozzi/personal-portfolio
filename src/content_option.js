@@ -57,6 +57,7 @@ const services = [
 
 const contactConfig = {
   YOUR_EMAIL: "arthur_ba@hotmail.com",
+  LINKEDIN: "https://www.linkedin.com/in/arthur-bertozzi/",
   description: "Feel free to contact me for any work or suggestions",
   // creat an emailjs.com account
   // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/

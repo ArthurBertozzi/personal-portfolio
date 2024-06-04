@@ -18,6 +18,10 @@ export const dataportfolio = [
         When a product is added or withdrawn, the Firebase database is updated accordingly.
         Additionally, when a product is withdrawn from stock, the system generates a DOCX document to manage the physical inventory.
       `,
+      impact: `
+        The system has helped the company to manage its inventory more efficiently.
+        Reducing the time spent on manual inventory management tasks has allowed the company to focus on other areas of the business.
+        `,
       stack: ["Python", "Kivy", "Firebase", "Microsoft Word"],
     },
   },
@@ -32,6 +36,10 @@ export const dataportfolio = [
         The system utilizes Twilio for message delivery and Google Cloud Platform for hosting the application.
         Triggers for the messages are events occurring in various applications such as an e-commerce store, ERP, and TMS systems.
       `,
+      impact: `
+        The system has helped the company to improve customer engagement by sending personalized messages to customers.
+        The customer contact rate to know where the product is has decreased, letting the customer experience team focus on other tasks.
+        `,
       stack: [
         "Python",
         "Twilio",
@@ -54,6 +62,9 @@ export const dataportfolio = [
         The system uses a DOCX template and replaces variables within the document with data provided by the user.
         It is utilized for generating contracts, reports, and other documents.
       `,
+      impact: `
+        The system has helped the company to automate the process of generating documents, decreasing the time spent on manual tasks.
+      `,
       stack: ["Python", "Kivy", "Microsoft Word"],
     },
   },
@@ -65,6 +76,9 @@ export const dataportfolio = [
       description: `
         This project focuses on creating a system that enables the company to automate the process of extracting data from websites.
         Additionally, the system automates various tasks to improve efficiency.
+      `,
+      impact: `
+        The system has helped the company to automate repetitive tasks, reducing the time spent on manual work.
       `,
       stack: ["Python", "Selenium", "Playwright"],
     },
@@ -78,6 +92,9 @@ export const dataportfolio = [
         This project aims to create a system that integrates various applications within the company.
         The system acts as a middleware layer that enables applications to communicate with each other.
         It is utilized for integrating applications such as ERP, CRM, WMS, TMS and e-commerce systems.
+      `,
+      impact: `
+        The system has helped the company to streamline the process of integrating applications, improving data flow and communication between systems.
       `,
       stack: [
         "Node.js",

@@ -101,13 +101,15 @@ export const ContactUs = () => {
               </a>
               <br />
               <br />
-              {contactConfig.hasOwnProperty("YOUR_FONE") ? (
+              {contactConfig.hasOwnProperty("LINKEDIN") ? (
                 <p>
-                  <strong>Phone:</strong> {contactConfig.YOUR_FONE}
+                  <strong>Linkedin: </strong>{" "}
+                  <a href={contactConfig.LINKEDIN}>Page</a>
                 </p>
               ) : (
                 ""
               )}
+              <br />
             </address>
             <p>{contactConfig.description}</p>
           </Col>

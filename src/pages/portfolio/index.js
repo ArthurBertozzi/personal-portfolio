@@ -48,9 +48,16 @@ export const Portfolio = () => {
             <Modal.Title>{selectedProject?.title}</Modal.Title>
           </Modal.Header>
           <Modal.Body>
+            <strong>Description:</strong>
             {selectedProject?.description.split("\n").map((line, index) => (
               <p key={index}>{line}</p>
             ))}
+            <p>
+              <strong>Impact:</strong>
+              {selectedProject?.impact.split("\n").map((line, index) => (
+                <p key={index}>{line}</p>
+              ))}
+            </p>
             <p>
               <strong>Technologies Used:</strong>
             </p>
