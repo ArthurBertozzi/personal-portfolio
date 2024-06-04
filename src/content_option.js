@@ -58,7 +58,7 @@ const services = [
 const contactConfig = {
   YOUR_EMAIL: "arthur_ba@hotmail.com",
   // decidir se deixar telefone ou nao
-  YOUR_FONE: "+55 11 981087184",
+  // YOUR_FONE: "+55 11 981087184",
   description: "Feel free to contact me for any work or suggestions",
   // creat an emailjs.com account
   // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
