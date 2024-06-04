@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/personal-portfolio/static/css/main.e648accc.css",
-    "main.js": "/personal-portfolio/static/js/main.e8ec374b.js",
+    "main.js": "/personal-portfolio/static/js/main.ac1012c5.js",
     "static/media/coding.jpg": "/personal-portfolio/static/media/coding.c5dcd2854c490470163f.jpg",
     "static/media/webautomation.jpg": "/personal-portfolio/static/media/webautomation.2197f4c3d7d881d3812b.jpg",
     "static/media/inventory.jpg": "/personal-portfolio/static/media/inventory.48b018448f7d144b6c04.jpg",
@@ -23,6 +23,6 @@
   },
   "entrypoints": [
     "static/css/main.e648accc.css",
-    "static/js/main.e8ec374b.js"
+    "static/js/main.ac1012c5.js"
   ]
 }
