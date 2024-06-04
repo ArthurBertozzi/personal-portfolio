@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/personal-portfolio/static/css/main.e648accc.css",
+    "main.js": "/personal-portfolio/static/js/main.2617989c.js",
+    "static/media/coding.jpg": "/personal-portfolio/static/media/coding.c5dcd2854c490470163f.jpg",
+    "static/media/webautomation.jpg": "/personal-portfolio/static/media/webautomation.2197f4c3d7d881d3812b.jpg",
+    "static/media/inventory.jpg": "/personal-portfolio/static/media/inventory.48b018448f7d144b6c04.jpg",
+    "static/media/document.jpg": "/personal-portfolio/static/media/document.8a405a13ccf695683ead.jpg",
+    "static/media/home-banner.jpg": "/personal-portfolio/static/media/home-banner.76183d22af78ff37820d.jpg",
+    "static/media/crm.jpg": "/personal-portfolio/static/media/crm.a553a1fb2cb9620222a5.jpg",
+    "static/media/cloudtasks.svg": "/personal-portfolio/static/media/cloudtasks.ea6d8344a9f80b3f1392879ed63cd252.svg",
+    "static/media/kivy.svg": "/personal-portfolio/static/media/kivy.34ea0082d37b187c28f6af1d5054620e.svg",
+    "static/media/playwright.svg": "/personal-portfolio/static/media/playwright.d95182d064f8815625cfb99307e9098d.svg",
+    "static/media/compute_engine.svg": "/personal-portfolio/static/media/compute_engine.8e259c921d506ab6b1468f43783064b3.svg",
+    "static/media/cloud_functions.svg": "/personal-portfolio/static/media/cloud_functions.35d5aacf8e441f0bcfcbc623b1135a37.svg",
+    "static/media/pubsub.svg": "/personal-portfolio/static/media/pubsub.a3571be2ae814b150636c206eb9fd0a8.svg",
+    "static/media/app_engine.svg": "/personal-portfolio/static/media/app_engine.9be630615954ecf18f015c8d5da610e3.svg",
+    "static/media/cloud_storage.svg": "/personal-portfolio/static/media/cloud_storage.b9679997c1633a26582f8422a36fcd7f.svg",
+    "index.html": "/personal-portfolio/index.html",
+    "static/media/identity_and_access_management.svg": "/personal-portfolio/static/media/identity_and_access_management.2c23bf397a813ba8d7b0ddbf09ad2cca.svg",
+    "static/media/firestore.svg": "/personal-portfolio/static/media/firestore.bd17dad53e059d29bf69bd44a91cfa89.svg",
+    "static/media/tkinter.svg": "/personal-portfolio/static/media/tkinter.4b4d7577f8a4a4f04a7087cf34b80fea.svg"
+  },
+  "entrypoints": [
+    "static/css/main.e648accc.css",
+    "static/js/main.2617989c.js"
+  ]
+}
